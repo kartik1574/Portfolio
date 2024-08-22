@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+</head>
+
+<body>
+    <div id="main" data-scroll-container>
+        <nav>
+            <a href="#" class="logo"><span>Kartik</span></a>
+            <ul class="links">
+                <a href="#home" data-scroll-to>Home</a>
+                <a href="#about" data-scroll-to>About</a>
+                <a href="#services" data-scroll-to>Services</a>
+                <a href="#project" data-scroll-to>Projects</a>
+                <a href="#contact" data-scroll-to>Contact</a>
+            </ul>
+            <i class='bx bx-menu-alt-right' id="menu"></i>
+            <a href="#contact" class="btn" id="btn1" data-scroll-to>Contact Me</a>
+        </nav>
+
+        <section id="home" data-scroll-section>
+            <img src="img/new me 5.png" alt="" data-scroll data-scroll-speed="2">
+            <div id="info-box">
+                <h1><span>Hi :) I'm Kartik</span></h1>
+                <h3><span>A Front End Developer</span></h3>
+                <p>It started with a simple website experiment that sparked my passion for front-end development. Coding became more than just functionality, it’s about creating meaningful experiences. Now, every project is an exciting blend of creativity and technology.</p>
+            </div>
+            <div class="btn-box">
+                <div class="btn">Hire</div>
+                <a href="#contact"><div class="btn">Contact Me</div></a>
+            </div>
+        </section>
+
+        <section id="about" data-scroll-section>
+            <div class="about-box">
+                <div class="about-info">
+                    <h1 class="autoShow"><span>About Me</span></h1>
+                    <p class="autoShow">A front-end web developer skilled in HTML, CSS, and JavaScript, passionate about creating responsive websites and exploring UI/UX design, blending creativity with technology to deliver engaging digital experiences.</p>
+                </div>
+                <h2 class="autoShow"><span>Skills</span></h2>
+                <div class="skills autoShow">
+                    <ul>
+                        <li><span><i class='bx bx-chevron-right'></i> HTML</span></li>
+                        <li><span><i class='bx bx-chevron-right'></i> CSS</span></li>
+                        <li><span><i class='bx bx-chevron-right'></i> JavaScript</span></li>
+                    </ul>
+                    <ul>
+                        <li><span><i class='bx bx-chevron-right'></i> Data Mining</span></li>
+                        <li><span><i class='bx bx-chevron-right'></i> UI/UX</span></li>
+                        <li><span><i class='bx bx-chevron-right'></i> Video Editing</span></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="autoShow" src="img/new me 5.png" alt="">
+        </section>
+
+        <section class="autoShow" id="services" data-scroll-section>
+            <h1 class="header"><span>Services</span></h1>
+            <div class="services-container">
+                <div class="box autoShow">
+                    <h1><span>Web Design</span></h1>
+                    <p>I create visually appealing and user-friendly websites that combine aesthetics with functionality. Whether it’s a portfolio, business site, or e-commerce platform, my designs bring your vision to life with intuitive, engaging experiences.</p>
+                    <img src="img/web design.avif" alt="">
+                </div>
+                <div class="box autoShow" class="autoShow">
+                    <h1><span>Web Development</span></h1>
+                    <p>I specialize in creating visually stunning and highly functional front-end solutions. By leveraging HTML, CSS, and JavaScript, I build responsive and interactive websites that enhance user experiences across all devices.</p>
+                    <img src="img/web development.jpg" alt="">
+                </div>
+                <div class="box autoShow">
+                    <h1><span>Data Mining</span></h1>
+                    <p>I extract valuable insights from complex datasets, helping you make informed decisions. My approach to data mining focuses on identifying patterns and trends to drive strategic business outcomes.</p>
+                    <img src="img/data mining.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" data-scroll-section>
+            <h1 class="header"><span>Contact</span></h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="input-box">
+                    <input type="hidden" name="access_key" value="7c6d77e2-d290-45a2-9ba6-79f3f71b4df0">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="Email" name="name" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="messaage" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!--<button><div class="btn">Submit</div></button>-->
+            </form>
+        </section>
+
+        <footer data-scroll-section>
+            <div class="col-left">
+                <div class="col-box">
+                    <span><i class='bx bxs-location-plus'></i></span>
+                    <span></span>
+                </div>
+                <div class="col-box">
+                    <span><i class='bx bxs-phone'></i></span>
+                    <span></span>
+                </div>
+                <div class="col-box">
+                    <span><i class='bx bxs-envelope'></i></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="col-right">
+                <span>About My Services</span>
+                <p>I offer expert front-end development, web design, and data mining services. From creating engaging, responsive websites to extracting valuable insights from data, I blend creativity and technical skill to deliver solutions that meet your needs.</p>
+                <div class="social-icons">
+                    <span>
+                        <a href="www.linkedin.com/in/kartik-6381a22ab" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://x.com/KartikJonker" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.reddit.com/user/Additional-Ice7246/" target="_blank"><i class='bx bxl-reddit'></i></a>
+                        <a href="https://github.com/kartik1574" target="_blank"><i class='bx bxl-github'></i></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>   
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+        $(document).ready(function () {
+        if (window.location.hash.length > 0) {
+        window.scrollTo(0, $(window.location.hash).offset().top);
+        }
+        
+        }); </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
